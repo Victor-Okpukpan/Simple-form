@@ -49,7 +49,7 @@ select {
     bottom: 16px;
 }
 
-.names, .gender, .conditions {
+.names, .gender {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -71,7 +71,12 @@ select {
 }
 
 .conditions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    flex-basis: 50%;
+    gap: 2px;
 }
 
 input[type=submit] {
@@ -82,4 +87,14 @@ input[type=submit] {
     background-color: purple;
     color: white;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .names{
+        display: block;
+    }
 }
